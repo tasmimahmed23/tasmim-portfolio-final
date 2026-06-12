@@ -1,0 +1,17 @@
+<svg width="900" height="900" viewBox="0 0 900 900" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <radialGradient id="g" cx="50%" cy="45%" r="60%">
+      <stop offset="0%" stop-color="#242424"/>
+      <stop offset="62%" stop-color="#080808"/>
+      <stop offset="100%" stop-color="#000000" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="s" x1="220" y1="160" x2="700" y2="780" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#ffffff" stop-opacity="0.24"/>
+      <stop offset="1" stop-color="#ffffff" stop-opacity="0.03"/>
+    </linearGradient>
+  </defs>
+  <circle cx="450" cy="450" r="355" fill="url(#g)"/>
+  <circle cx="450" cy="450" r="310" stroke="url(#s)" stroke-width="2"/>
+  <text x="450" y="487" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="210" font-weight="800" fill="white" fill-opacity="0.22">T</text>
+  <text x="450" y="590" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="34" font-weight="700" letter-spacing="8" fill="white" fill-opacity="0.18">ADD IMAGE</text>
+</svg>
