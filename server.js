@@ -111,7 +111,15 @@ app.post('/api/contact', contactLimiter, async (req, res) => {
     }
 
     await saveMessage(validation.data, req);
-    await sendEmail(validation.data);
+
+    try {
+      await sendEmail(validation.data);
+    } catch (emailError) {
+      // Keep the contact form working even if SMTP is temporarily unavailable
+      // or environment variables are incorrect. The message is still saved
+      // in messages/contact-messages.jsonl.
+      if (NODE_ENV !== 'production') console.error('Email delivery failed:', emailError);
+    }
 
     return res.json({ success: true, message: 'Message sent successfully.' });
   } catch (error) {
