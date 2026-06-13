@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tasmim Ahmed — Projects</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Playfair+Display:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="projects-page-body">
+<header class="navbar">
+  <div class="nav-inner">
+    <a class="brand brand-link" href="index.html">TASMIM</a>
+    <nav aria-label="Projects navigation">
+      <a href="index.html#home" data-nav-target="home">Home</a>
+      <a href="index.html#about" data-nav-target="about">About Me</a>
+      <a href="projects.html" data-nav-target="projects">Projects</a>
+      <a href="index.html#contact" data-nav-target="contact">Contact Me</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+<section class="projects-section projects-archive-section observe-section project-showcase-page" id="projects">
+  <h2 class="outline-title reveal">PROJECTS</h2>
+  <p class="projects-archive-intro reveal">A focused archive of selected work. Use the arrows to browse one project at a time with a smooth horizontal showcase animation.</p>
+
+  <div class="project-showcase-shell" data-project-showcase>
+    <div class="project-showcase-meta" aria-live="polite">
+      <span class="project-showcase-label">Selected Project</span>
+      <span class="project-showcase-counter"><span data-project-current>01</span> / <span data-project-total>06</span></span>
+    </div>
+
+    <button class="project-arrow project-arrow-prev" type="button" data-project-prev aria-label="Previous project">&#8592;</button>
+
+    <div class="stacked-projects projects-archive-stack project-slider-track">
+      <article class="project-card project-slide is-active">
+        <div class="project-header">
+          <div class="project-info">
+            <span>01</span>
+            <h3>CBuy Car Marketplace Website UI</h3>
+          </div>
+          <a href="#" class="project-demo-btn" data-project-key="cbuy">Live Demo</a>
+        </div>
+        <div class="project-preview"><img src="images/project-cbuy-car-marketplace-web-ui.jpg" alt="CBuy Car Marketplace Website UI"></div>
+      </article>
+      <article class="project-card project-slide is-after">
+        <div class="project-header">
+          <div class="project-info">
+            <span>02</span>
+            <h3>ProCam Product Landing UI</h3>
+          </div>
+          <a href="#" class="project-demo-btn" data-project-key="procam">Live Demo</a>
+        </div>
+        <div class="project-preview"><img src="images/project-procam-product-landing-ui.jpg" alt="ProCam Product Landing UI"></div>
+      </article>
+      <article class="project-card project-slide is-after">
+        <div class="project-header">
+          <div class="project-info">
+            <span>03</span>
+            <h3>Orbit SaaS Landing Page</h3>
+          </div>
+          <a href="#" class="project-demo-btn" data-project-key="orbit">Live Demo</a>
+        </div>
+        <div class="project-preview"><img src="images/project-orbit-saas-landing-page.jpg" alt="Orbit SaaS Landing Page"></div>
+      </article>
+      <article class="project-card project-slide is-after">
+        <div class="project-header">
+          <div class="project-info">
+            <span>04</span>
+            <h3>Car Rental Mobile App UI</h3>
+          </div>
+          <a href="#" class="project-demo-btn" data-project-key="car-rental">Live Demo</a>
+        </div>
+        <div class="project-preview"><img src="images/project-car-rental-mobile-app-ui.jpg" alt="Car Rental Mobile App UI"></div>
+      </article>
+      <article class="project-card project-slide is-after">
+        <div class="project-header">
+          <div class="project-info">
+            <span>05</span>
+            <h3>EcoSys Environmental Website UI</h3>
+          </div>
+          <a href="#" class="project-demo-btn" data-project-key="ecosys">Live Demo</a>
+        </div>
+        <div class="project-preview"><img src="images/project-ecosys-environment-website-ui.jpg" alt="EcoSys Environmental Website UI"></div>
+      </article>
+      <article class="project-card project-slide is-after">
+        <div class="project-header">
+          <div class="project-info">
+            <span>06</span>
+            <h3>BMW M4 Automotive Landing Page</h3>
+          </div>
+          <a href="#" class="project-demo-btn" data-project-key="bmw-m4">Live Demo</a>
+        </div>
+        <div class="project-preview"><img src="images/project-bmw-m4-automotive-landing-page.jpg" alt="BMW M4 Automotive Landing Page"></div>
+      </article>
+    </div>
+
+    <button class="project-arrow project-arrow-next" type="button" data-project-next aria-label="Next project">&#8594;</button>
+  </div>
+</section>
+</main>
+
+<script src="project-links.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
